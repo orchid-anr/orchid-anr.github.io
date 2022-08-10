@@ -1,0 +1,93 @@
+####Template#####
+#- firstname: 'First Name'
+#  lastname: 'Last Name'
+#  picture: 'name of picture file in members/'
+#  interests: "Short text indicating current interests."
+#  grades: % List of grades
+#    - grade:
+#      name: PhD
+#      startyear: 2020
+#      endyear:  '' % Empty string to indicate ongoing (will add '-' to page)
+
+member_list_title: Members
+
+professors:
+
+  - firstname: 'Olivier'
+    lastname: 'Bernard'
+    university: 'INSA, University of Lyon'
+    picture: 'oBernard.jpg'
+    interests: "Cardiac imaging, deep learning, image simulation"
+    url: "https://www.creatis.insa-lyon.fr/~bernard/"
+    
+  - firstname: 'Nicolas'
+    lastname: 'Thomes'
+    university: 'Conservatoire National des Arts et Métiers (Cnam Paris)'
+    picture: 'nThome.jpg'
+    interests: "Machine learning, deep learning, multi-modal analysis"
+    url: "http://cedric.cnam.fr/~thomen/"
+    
+
+researchers:
+
+  - firstname: 'Damien'
+    lastname: 'Garcia'
+    institution: 'INSERM - CR'
+    picture: 'dGarcia.jpg'
+    interests: "Ultrasound imaging, image reconstruction, Hemodynamics"
+    url: "https://www.biomecardio.com/en/index.html" 
+    
+    
+associate_professors:
+
+  - firstname: 'Vincent'
+    lastname: 'Audigier'
+    university: 'Conservatoire National des Arts et Métiers (Cnam Paris)'
+    picture: 'vAudigier.jpg'
+    interests: "Missing data, multiple imputation, clustering"
+    url: "https://vincentaudigier.weebly.com/"
+    
+  - firstname: 'Clément'
+    lastname: 'Rambour'
+    university: 'Conservatoire National des Arts et Métiers (Cnam Paris)'
+    picture: 'cRambour.jpg'
+    interests: "Time series, multi-modal data, inverse problems"
+    url: "http://cedric.cnam.fr/~rambourc/"
+     
+                
+research_engineers:
+
+  - firstname: 'Frédéric'
+    lastname: 'Cervenansky'
+    institution: 'UCBL - IR'
+    picture: 'fCervenansky.jpg'
+    interests: "Database management, webservice, software developement"
+    
+medical_doctors:
+
+  - firstname: 'Pierre-Yves'
+    lastname: 'Courand'
+    institution: 'HCL - PUPH'
+    picture: 'pyCourand.jpg'
+    speciality: "Cardiologist"
+    expertise: "Cardio-vascular imaging"
+
+  - firstname: 'Eric'
+    lastname: 'Saloux'
+    institution: 'CHU Caen'
+    picture: 'eSaloux.jpg'
+    speciality: "Cardiologist"
+    expertise: "Cardio-vascular imaging"
+
+  - firstname: 'Amir'
+    lastname: 'Hodzic'
+    institution: 'CHU Caen'
+    picture: 'aHodzic.jpg'
+    speciality: "Cardiologist"
+    expertise: "Cardio-vascular imaging"
+    
+phd:
+
+        
+postdoc:
+
