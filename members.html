@@ -49,36 +49,6 @@ permalink: /members/
     </table>
 
 
-  <h1>Associate professors</h1>
-
-    <table>
-        {% for item in site.data.members.associate_professors %}
-         <tr>
-             <th>
-                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
-                 {%if item.university %}
-                  Institution: {{ item.university }}
-                 {% endif %} </br>
-                   <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
-                    {%if item.interests %}
-                        Interests: {{ item.interests }}
-                    {% endif %} </br>
-		 {%if item.url %}
-                  <a href="{{item.url}}" target="_blank">Web site</a>
-                 {% endif %}
-             </th>
-              <th>
-                  {%if item.picture %}
-                    <img src={{item.picture}}>
-                  {% endif %}
-              </th>
-         </tr>
-       {% endfor %}
-
-    </table>
-
-
-
   <h1>Researchers</h1>
 
     <table>
@@ -96,6 +66,35 @@ permalink: /members/
                  {%if item.url %}
                   <a href="{{item.url}}" target="_blank">Web site</a>
                  {% endif %}                 
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{item.picture}}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+
+
+  <h1>Associate professors</h1>
+
+    <table>
+        {% for item in site.data.members.associate_professors %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.university %}
+                  Institution: {{ item.university }}
+                 {% endif %} </br>
+                   <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                    {%if item.interests %}
+                        Interests: {{ item.interests }}
+                    {% endif %} </br>
+		 {%if item.url %}
+                  <a href="{{item.url}}" target="_blank">Web site</a>
+                 {% endif %}
              </th>
               <th>
                   {%if item.picture %}
