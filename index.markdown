@@ -27,6 +27,8 @@ hidden:	true  # Excluded from the menu
 
 Welcome to the website of the ORCHID project, led by Professor [Olivier Bernard](https://www.creatis.insa-lyon.fr/~bernard/) and funded by the French National Research Agency - [ANR](https://anr.fr/en/). This project will take place from Oct. 2022 to Sept. 2026.
 
+<br />
+<img src="images/ORCHID_illustration.jpg" width="400" class="center" />
 
 <span style="color: orange;">Context</span> - Echocardiography plays a paramount role in day to day clinical practice to highlight structural or functional dysfunction of the heart. The observed abnormalities combined with clinical data of the patient lead to diagnoses, many of which requiring the performance of complementary examinations to diagnose the origin of cardiac pathology which will modify the prognosis of patient and the subsequent therapy. <!-- ***Some of these examinations are useless and do not find any specific abnormality, resulting in constraints for the patients and a cost for the society.*** -->
 > Some of these examinations are useless and do not find any specific abnormality, resulting in constraints for the patients and a cost for the society
