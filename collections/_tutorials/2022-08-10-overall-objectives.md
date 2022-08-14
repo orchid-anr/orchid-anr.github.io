@@ -62,9 +62,7 @@ Among the solutions studied in the literature to predict cardiac pathologies, ma
 
 ### Ambition and novelty
 
-We will exploit the AI formalism based on the transformer (attention-based neural network) paradigm to perform etiological diagnosis of cardiac diseases. Transformers are a natural and convenient model for combining multimodal inputs. We will therefore format the clinical data in three different modalities (i.e. image sequences, time series and patient data) to effectively exploit the underlying formalism. We will
-then develop a transformer architecture to extract representations for each modality based on self-attention, but also (and more importantly) to exploit specific cross-attention mechanisms to efficiently fuse the multimodal data of the project. We will also use the transformer paradigm to
-develop solutions to explain model decision making by selecting the most salient interactions between input image sequences, time series and patient data during prediction.
+We will exploit the AI formalism based on the transformer (attention-based neural network) paradigm to perform etiological diagnosis of cardiac diseases. Transformers are a natural and convenient model for combining multimodal inputs. We will therefore format the clinical data in several distinct modalities to effectively exploit the underlying formalism. We will then develop a transformer architecture to extract representations for each modality based on self-attention, but also (and more importantly) to exploit specific cross-attention mechanisms to efficiently fuse the multimodal data of the project. We will also use the transformer paradigm to develop solutions to explain model decision making by selecting the most salient interactions between the key elements for each modality.
 
 
 

@@ -7,65 +7,55 @@ categories: objectives, clinical, methodological
 ---
 
 
-- [**Automatic etiological diagnosis of cardiac diseases**](#automatic-etiological-diagnosis-of-cardiac-diseases)
-  - [Motivations](#motivations)
-  - [Ambition and novelty](#ambition-and-novelty)  
-- [**Targeted pathologies**](#targeted-pathologies)
-  - [Hypokinetic cardiomyopathy](#hypokinetic-cardiomyopathy)
-  - [Left ventricular hypertrophy](#left-ventricular-hypertrophy)        
-- [**AI method with high level of interpretability**](#ai-method-with-high-level-of-interpretability)
-  - [Motivations](#motivations)
-  - [Ambition and novelty](#ambition-and-novelty)  
+- [**Hypokinetic cardiomyopathy**](#targeted-pathologies)
+  - [Coronary artery disease](#coronary-artery-disease)
+  - [Primary myocardial dysfunction](#primary-myocardial-dysfunction)  
+- [**Left ventricular hypertrophy**](#left-ventricular-hypertrophy)        
+  - [Arterial hypertension](#arterial-hypertension)
+  - [Infiltrative myocardial disease](#infiltrative-myocardial-disease)  
 
 &nbsp;
 
-## **Automatic etiological diagnosis of cardiac diseases**
+## **Hypokinetic cardiomyopathy**
 
-### Motivations
+Hypokinetic cardiomyopathies correspond to pathologies that decrease the motion of the heart wall. In the ORCHID project, we consider two common sources of hypokinetic cardiomyopathies, namely coronary artery disease and primary myocardial dysfunction.
 
-At present, many medical studies have been carried out to investigate the capacity of machine learning methods to detect cardiac pathologies from patient data with standard echocardiographic measurements or with the content of ultrasound images. 
-> Since echocardiography is the imaging of choice for establishing a first cardiac diagnosis, this modality has naturally been the subject of important research.
 
-However, most of the underlying studies are focused on situations where the expert cardiologist is already able to establish a diagnosis from
-the data at its disposal, restricting the interest of using such methods to two main scenarios: i) the reduction of the analysis time by automatic computation of a first diagnostic hypothesis to be confirmed by an expert; ii) the deployment of automatic tools for the screening of a large population.
+### Coronary artery disease
 
-### Ambition and novelty
+* Coronary artery disease is the most common form of cardiovascular disease. 
+* The underlying cause is ***atherosclerosis***, which is a chronic inflammatory disease of the arteries.
+* Atherosclerosis is a disease in which the immune system elicits an active inflammation within the artery wall and lipids plays a key role.
+* As the inflammation and deposition of lipids progress, an ***atherosclerotic plaque*** forms in the wall of the artery. 
+* Advanced atherosclerosis plaques contain inflammtory cells, smooth muscle cells, extracellular matrix, lipids and acellular debris.
+* As the atherosclerosis plaque increases in size, it bulges into the artery lumen and causes ***stenosis***, i.e. reduction of the artery lumen. 
+* The reduction of the artery lumen causes limitations to the blood flow. This may cause symptoms in situations with increased cardiac workload (i.e. physical exercice) because the increased workload leads to increased oxygen demand but the stenosis limits the volume that can be delivered to the heart muscle supplied by the atherosclerotic artery.
+* Whenever oxygen demand exceeds oxygen delivery ischemia occurs and this manifests with chest discomfort referred to as angina pectoris.
 
-In this project, we intend to move a step forward by studying the possibility of using patient data complemented by high-quality information extracted from echocardiographic acquisitions to make etiological diagnoses. Our solution will be developed on the basis of a unique dataset that will be implemented in the particular context of this study. It will include a total of 1500 patients from a multi-center (HCL and CHU of Caen) and multi-vendor (GE and Philips systems) study for which additional examinations were carried out in order to establish an etiological
-diagnosis. 
+* A ***coronary angiogram*** is considered to be the best method of diagnosing coronary artery disease.
+    * During the procedure a long, thin, flexible tube called catheter is inserted inta a blood vessel.
+    * Using X-ray images as a guide, the tip of the catheter is passed up to the heart and coronary arteries.
+    * a contrast medium is injected through the catheter and X-ray images (angiograms) are taken.
+    * The contrast medium is visible on the angiograms, showing the blood vessels through which the fluid passes. This clearly highlights any blood vessels that are narrowed or blocked. 
 
 &nbsp;
 
-## **Targeted pathologies**
+### Primary myocardial dysfunction
 
-We will focus on two clinical situations that commonly occur and contribute to the overcrowding of hospitals and an increase in the cost of patient care. 
+&nbsp;
 
-### Hypokinetic cardiomyopathy
-
-The first concerns the diagnosis of a hypokinetic cardiomyopathy for which the echocardiographic data do not easily allow to
-distinguish a cause related to a **coronary artery** disease or related to a **primary myocardial dysfunction**, imposing the realization of an invasive intervention, i.e. a coronary angiogram. 
-
-### Left ventricular hypertrophy
+## **Left ventricular hypertrophy**
 
 The second concerns the diagnosis of a left ventricular hypertrophy, the etiology of which can be diverse and whose assessment is particularly exhaustive and costly. In this project, we will study the two most common causes: **arterial hypertension** and **infiltrative myocardial disease**. The cohort will be composed in a balanced way of the four pathologies mentioned above with data from healthy
 subjects.
 
 &nbsp;
 
-## **AI method with high level of interpretability**
+### Arterial hypertension
 
-### Motivations
+&nbsp;
 
-Among the solutions studied in the literature to predict cardiac pathologies, machine learning methods produce the most advanced results. These techniques are used either to classify targeted pathologies or to identify and analyse phenotype-based groups (also named phenogroups). Deep learning methods are the current solutions of choice to classify cardiac diseases from echocardiography. <!-- The underlying formalism is based on classical convolutional neural networks that use static images as input and involve simple architectures to make a binary decision.-->
-
-> Although these methods can achieve high performance for some pathologies, the underlying decision mechanisms does not allow a thorough analysis and interpretation of the results, making it difficult to deploy such solutions in clinical routine.
-
-### Ambition and novelty
-
-We will exploit the AI formalism based on the transformer (attention-based neural network) paradigm to perform etiological diagnosis of cardiac diseases. Transformers are a natural and convenient model for combining multimodal inputs. We will therefore format the clinical data in three different modalities (i.e. image sequences, time series and patient data) to effectively exploit the underlying formalism. We will
-then develop a transformer architecture to extract representations for each modality based on self-attention, but also (and more importantly) to exploit specific cross-attention mechanisms to efficiently fuse the multimodal data of the project. We will also use the transformer paradigm to
-develop solutions to explain model decision making by selecting the most salient interactions between input image sequences, time series and patient data during prediction.
-
+### Infiltrative myocardial disease
 
 
 
