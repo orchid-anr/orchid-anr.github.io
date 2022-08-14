@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Overall objectives"
+title:  "Targeted cardiac diseases"
 author: 'Olivier Bernard'
-date:   2022-08-14
+date:   2022-08-10
 categories: objectives, clinical, methodological
 ---
 
