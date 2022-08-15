@@ -42,14 +42,18 @@ Hypokinetic cardiomyopathies correspond to pathologies that decrease the motion 
 
 ### Primary myocardial dysfunction
 
+
+* Primary myocardial disease designates those conditions which affect heart muscle but spare other anatomic structures within the cardiovascular system.
+* Primary myocardial disease thus affects the heart muscle itself and is not associated with congenital, valvular, or coronary heart disease or systemic disorders.
+* Examples include the ***granuloma of sarcoid***, the ***infiltrative lesions of amyloidosis***, and ***inflammatory myocarditis*** following a variety of infectious illnesses.
+
 &nbsp;
 
 ## **Left ventricular hypertrophy**
 
-The second concerns the diagnosis of a left ventricular hypertrophy, the etiology of which can be diverse and whose assessment is particularly exhaustive and costly. In this project, we will study the two most common causes: **arterial hypertension** and **infiltrative myocardial disease**. The cohort will be composed in a balanced way of the four pathologies mentioned above with data from healthy
-subjects.
+Left ventricular hypertrophy corresponds to enlargement and thickening (hypertrophy) of the walls of the left ventricle. The thickened heart wall loses elasticity, leading to increased pressure to allow the heart to fill its pumping chamber to send blood to the rest of the body. 
 
-&nbsp;
+Left ventricular hypertrophy is more common in people who have uncontrolled high blood pressure. But no matter what your blood pressure is, developing left ventricular hypertrophy puts you at higher risk of congestive heart failure and irregular heart rhythms. In the ORCHID project, we consider two common sources of left ventricular hypertrophy, namely arterial hypertension and infiltrative myocardial disease.
 
 ### Arterial hypertension
 
