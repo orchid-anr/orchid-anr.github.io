@@ -57,9 +57,31 @@ Left ventricular hypertrophy is more common in people who have uncontrolled high
 
 ### Arterial hypertension
 
-&nbsp;
+* Arterial hypertension is a disease characterized by high blood pressure.
+* ***Blood pressure*** is the physical result of the ejection of blood by the heart into the blood vessels. It is exerted on the vascular walls. It is characterized by two extreme values:
+    * The ***high value*** which is measured during the contraction of the heart (systole) and which makes it possible to push the blood by the aorta towards the peripheral arteries.
+    * The ***low value*** measured during the relaxation of the heart (diastole), which allows the cardiac ventricles to receive blood arriving in the atria through the vena cava and the pulmonary veins.
+* We refer to arterial hypertension when one and/or the other of these values, measured at rest, is higher than the normal values: ***140 mmHg*** (millimeters of mercury) for the systolic pressure and ***90 mmHg*** for the diastolic pressure.
+
+* The diagnosis must always be confirmed by self-measurement of blood pressure or ambulatory blood pressure measurement:
+    * self-measurement of blood pressure is based on the use of a home blood pressure monitor. The patient must measure his or her blood pressure at home in a calm environment by repeating the measurement 3 times in the morning and 3 times in the evening, during 3 consecutive days (rule of 3). The diagnosis is made when the high/low values values exceed 135/85 mmHg.
+    * ambulatory blood pressure involves wearing a cuff connected to an electrical device worn on the belt. The blood pressure monitor measures and records blood pressure values every quarter of an hour for 24 hours. The diagnosis is made when the average high/low values exceed 130/80 mmHg.
 
 ### Infiltrative myocardial disease
 
+* Infiltrative cardiomyopathies are characterized by the deposition of abnormal substances that cause the ventricular walls to become progressively rigid, thereby impeding ventricular filling. 
+* Some infiltrative cardiac diseases increase ventricular wall thickness, while others cause chamber enlargement with secondary wall thinning.
+* The clinical presentation, along with functional and morphologic features, often provides enough insight to establish a working diagnosis.
+* However, in most circumstances, tissue or serologic evaluation is needed to validate or clarify the cardiac diagnosis and institute appropriate therapy.
+* The table below summarizes the different common types of infiltrative cardiomyopathies:
+
+| Naming  | Pathology | Echocardiogram |
+| :--------------- |:--------------|:-----|
+| Cardiac amyloidosis | Extracellular amyloid (protein aggregate) fibrils | LV and RV hypertrophy; granular speckled myocardium; restricted basal longitudinal strain |
+| Cardiac Sarcoidosis | Noncaseating granulomas (pathological clusters of inflammatory cells) surrounded by fibrosis | Septal thinning/thickening; noncoronary segmental wall motion abnormalities | 
+| Hemochromatosis | Genetic disease that causes iron overload | Diastolic disease - global systolic dysfunction |
+| Fabry Disease | Perinuclear vacuoles (small cavity) and myocardial fibrosis | Concentric LV hypertrophy |
+| Danon Disease | Myocyte hypertrophy with vacuolization (creation of small cavities) | Massive LV hypertrophy with possible outflow tract obstruction |
+| Friedreich’s Ataxia | Nonspecific myocyte hypertrophy and fibrosis | Increased septal thickness |
 
 
