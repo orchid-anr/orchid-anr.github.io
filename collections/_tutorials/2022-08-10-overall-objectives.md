@@ -23,10 +23,9 @@ categories: objectives, clinical, methodological
 
 ### Motivations
 
-At present, many medical studies have been carried out to investigate the capacity of machine learning methods to detect cardiac pathologies from patient data with standard echocardiographic measurements or with the content of ultrasound images. 
-> Since echocardiography is the imaging of choice for establishing a first cardiac diagnosis, this modality has naturally been the subject of important research.
+At present, many medical studies have been carried out to investigate the capacity of machine learning methods to detect cardiac pathologies from patient data with standard echocardiographic measurements or with the content of ultrasound images. Since echocardiography is the imaging of choice for establishing a first cardiac diagnosis, this modality has naturally been the subject of important research.
 
-However, most of the underlying studies are focused on situations where the expert cardiologist is already able to establish a diagnosis from
+> Most of the underlying studies are focused on situations where the expert cardiologist is already able to establish a diagnosis from
 the data at its disposal, restricting the interest of using such methods to two main scenarios: i) the reduction of the analysis time by automatic computation of a first diagnostic hypothesis to be confirmed by an expert; ii) the deployment of automatic tools for the screening of a large population.
 
 ### Ambition and novelty
@@ -42,12 +41,12 @@ We will focus on two clinical situations that commonly occur and contribute to t
 
 ### Hypokinetic cardiomyopathy
 
-The first concerns the diagnosis of a hypokinetic cardiomyopathy for which the echocardiographic data do not easily allow to
+The first concerns the diagnosis of a [hypokinetic cardiomyopathy](https://orchid-anr.github.io/tutorials/2022-08-14-target-cardiac-diseases.html) for which the echocardiographic data do not easily allow to
 distinguish a cause related to a **coronary artery** disease or related to a **primary myocardial dysfunction**, imposing the realization of an invasive intervention, i.e. a coronary angiogram. 
 
 ### Left ventricular hypertrophy
 
-The second concerns the diagnosis of a left ventricular hypertrophy, the etiology of which can be diverse and whose assessment is particularly exhaustive and costly. In this project, we will study the two most common causes: **arterial hypertension** and **infiltrative myocardial disease**. The cohort will be composed in a balanced way of the four pathologies mentioned above with data from healthy
+The second concerns the diagnosis of a [left ventricular hypertrophy](https://orchid-anr.github.io/tutorials/2022-08-14-target-cardiac-diseases.html), the etiology of which can be diverse and whose assessment is particularly exhaustive and costly. In this project, we will study the two most common causes: **arterial hypertension** and **infiltrative myocardial disease**. The cohort will be composed in a balanced way of the four pathologies mentioned above with data from healthy
 subjects.
 
 &nbsp;
