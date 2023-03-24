@@ -22,10 +22,10 @@ professors:
     
   - firstname: 'Nicolas'
     lastname: 'Thomes'
-    university: 'Conservatoire National des Arts et Métiers (Cnam Paris)'
+    university: 'Université de Sorbonne - Laboratoire ISIR - équipe MLIA'
     picture: 'nThome.jpg'
     interests: "Machine learning, deep learning, multi-modal analysis"
-    url: "http://cedric.cnam.fr/~thomen/"
+    url: "https://thome.isir.upmc.fr/"
     
 
 researchers:
