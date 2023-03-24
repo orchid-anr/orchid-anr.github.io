@@ -21,8 +21,8 @@ professors:
     url: "https://www.creatis.insa-lyon.fr/~bernard/"
     
   - firstname: 'Nicolas'
-    lastname: 'Thomes'
-    university: 'Université de Sorbonne - Laboratoire ISIR - équipe MLIA'
+    lastname: 'Thome'
+    university: 'Sorbonne Université - Laboratoire ISIR - équipe MLIA'
     picture: 'nThome.jpg'
     interests: "Machine learning, deep learning, multi-modal analysis"
     url: "https://thome.isir.upmc.fr/"
