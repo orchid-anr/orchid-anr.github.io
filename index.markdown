@@ -25,7 +25,7 @@ hidden:	true  # Excluded from the menu
 
 <font size="6">ORCHID project website</font> <br />
 
-Welcome to the website of the ORCHID project, led by Professor [Olivier Bernard](https://www.creatis.insa-lyon.fr/~bernard/) and funded by the French National Research Agency - [ANR](https://anr.fr/en/). This project will take place from Oct. 2022 to Sept. 2026.
+Welcome to the website of the ORCHID project, led by Professor [Olivier Bernard](https://www.creatis.insa-lyon.fr/~bernard/) and funded by the French National Research Agency - [ANR](https://anr.fr/en/) (ANR-22-CE45-0029-01). This project will take place from Dec. 2022 to Nov. 2026.
 
 <br />
 <img src="images/ORCHID_illustration.jpg" width="400" class="center" />
