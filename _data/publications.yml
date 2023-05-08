@@ -1,6 +1,12 @@
-journal_list_title: Journal papers
+journal_list_title: Conference proceedings
 journal:
-                                                                        
+
+  - authors: 'H.J. Ling, N. Painchaud, P.Y. Courand, P.M. Jodoin, D. Garcia and O. Bernard'
+    year: 2023
+    title: 'Extraction of volumetric indices from echocardiography: which deep learning solution for clinical use?'
+    journal: in the 12th international conference on Functional Imaging and Modeling of the Heart (FIMH'23)
+    pages: 1-10
+    doi: https://arxiv.org/abs/2305.01997                                                                       
 
 
    
