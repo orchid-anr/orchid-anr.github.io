@@ -99,8 +99,8 @@ The model is then a Transformer model:
 	 - additional linear
 	 - normalization layer (to prevent relevance exploding)
  - input: a sequence of $s$ tokens with a [CLS] token for classification
- - output: classification probability vector $y\in\R^C$
- - self-attention map for the block $b$ is $A^{(b)}=\mathrm{softmax}\left(\frac{\mathbf{Q}^{(b)}\cdot\mathbf{K}^{(b)^T}}{\sqrt{d_h}}\right)$, row-wise
+ - output: classification probability vector $y\in\mathbb{R}^C$
+ - self-attention map for the block $b$ is $A^{(b)}=\mathrm{softmax}\left(\frac{\mathbf{Q}^{(b)}\cdot\mathbf{K}^{(b)^T}}{\sqrt{d_h}}\mathbb{R}ight)$, row-wise
  - The relevance of each attention map is computed for the layer where the *softmax* operation is applied (the layer $n_b$):
     $$
     \bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
@@ -110,9 +110,9 @@ The model is then a Transformer model:
 
 Notice that this methods depends of the target class, which was not the case of the previous methods such as *rollout attention*.
 
-Finally, the matrix $\mathbf{C}$ is used, where $\mathbf{C} \in \R^{s \times s}$ and $s$ is the sequence length. Only the row associated to the [CLS] token is considered, and only the authors keep the $s-1$ tokens that correspond to the actual inputs. 
+Finally, the matrix $\mathbf{C}$ is used, where $\mathbf{C} \in \mathbb{R}^{s \times s}$ and $s$ is the sequence length. Only the row associated to the [CLS] token is considered, and only the authors keep the $s-1$ tokens that correspond to the actual inputs. 
 
-![](/collections/images/lrp_method.jpg)
+![](/collections/images/chefer_bib/lrp_method.jpg)
 
 # Experiments and results 
 
@@ -127,7 +127,7 @@ The evaluation of the model follows this procedure:
  - gradually mask out the pixels and measure the mean top-1 accuracy of the network 
  - the AUC is measured while removing pixels to test the drop in performances of the model
 
-![](/collections/images/results_relevancy.jpg)
+![](/collections/images/chefer_bib/results_relevancy.jpg)
 
 2. The segmentation tests
 
@@ -138,8 +138,8 @@ Three metrics are used:
  - mean Intersection over Union (mIoU)
  - mean Average Precision (mAP): uses the soft-segmentation to obtain a score that is threshold-agnostic
 
-![](/collections/images/tab_results_relevancy.jpg)
+![](/collections/images/chefer_bib/tab_results_relevancy.jpg)
 
 Finally, ablation studies are performed, consisting in removing $\nabla \mathbf{A}^{(b)}$ and replacing it with $\mathbf{A}^{(b)}$ in the relevancy propagation equation, or applying the method in the last block of the model only, or in the first block (respectively closest to the output or closest to the input).
 
-![](/collections/images/ablation_studies.jpg)
+![](/collections/images/chefer_bib/ablation_studies.jpg)
