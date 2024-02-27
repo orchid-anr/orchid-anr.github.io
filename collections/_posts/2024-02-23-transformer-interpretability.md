@@ -85,15 +85,15 @@ This brings an instability issue, due to the matrix multiplication and the numer
 
  1. The conservation rule
 
-    $$
-    \sum_j \bar{R}_j^{u^{(n)}} + \sum_k \bar{R}_k^{v^{(n)}} = \sum_i R_i^{(n-1)}
-    $$
+$$
+\sum_j \bar{R}_j^{u^{(n)}} + \sum_k \bar{R}_k^{v^{(n)}} = \sum_i R_i^{(n-1)}
+$$
  
  2. It bounds the relevance sum of each tensor such that:
 
-    $$
-    0 \leq  \sum_j \bar{R}_j^{u^{(n)}},  \sum_k \bar{R}_k^{v^{(n)}}  \leq  \sum_i R_i^{(n-1)}
-    $$
+$$
+0 \leq  \sum_j \bar{R}_j^{u^{(n)}},  \sum_k \bar{R}_k^{v^{(n)}}  \leq  \sum_i R_i^{(n-1)}
+$$
 
 where $\bar{R}_j^{u^{(n)}}$ and $\bar{R}_k^{v^{(n)}}$ are respectively the normalized term of the previous defined relevancy of $u$ and $v$.
 
