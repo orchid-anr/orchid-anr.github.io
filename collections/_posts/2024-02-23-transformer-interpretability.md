@@ -37,6 +37,7 @@ Therefore, the purpose is to get relevant score to be highlighted. The relevancy
 The idea is to employ LRP-based relevance to compute scores for each attention head in each layer. This method incorporates both the relevancy and gradient information such that the negative contribution of a token is iteratively removed.
 
 The relevance propagation follows Deep Taylor Decomposition principle (DTD):
+
 $$
 R_j^{(n)}=\mathcal{G}(\mathbf{X},\mathbf{Y}, R_i^{(n)}) = \sum_i\mathbf{X}_j\frac{\partial L_i^{(n)}(\mathbf{X},\mathbf{Y})}{\partial \mathbf{X}_j}\frac{R_i^{(n-1)}}{L_i^{(n)}(\mathbf{X},\mathbf{Y})}
 $$
@@ -46,6 +47,7 @@ Where $L_i$ denotes the operation between the input feature map $\mathbf{X}$ and
 ⚠️ Notice that the layers are ranked from the output (layer $1$) to the input (layer $N$). 
 
 *e.g.* $L_i(\mathbf{X},\mathbf{Y}) = \sum_{j'}w_{j'i}^+x_{j'}^+$ (LRP, with $(.)^+$ being the ReLU operator), which gives:
+
 $$
 R_j^{(n)} = \mathcal{G}(x^+, w^+, R^{(n-1)}) =  \sum_i \frac{x_j^+w_{ji}^+}{\sum_{j'}x_{j'}^+w_{j'i}^+}R_i^{(n-1)}
 $$
@@ -53,6 +55,7 @@ $$
  initialized with the one-hot $R^{(0)}=\mathbb{1}_t$ that indicates the target class $t$.
   
 This equation describes the ration between the evolution of $L_i$ and the evolution of $X_j$ for all $i$-th elements in the layer $(n-1)$, multiply for the relevancy score for all previous layers. This equation satisfies the ***conservation rule***:
+
 $$
 \sum_j R_j^{(n)} = \sum_i R_i^{(n-1)}
 $$
@@ -72,6 +75,7 @@ $$
 
 which are relevances for $u$ and $v$ respectively, the two feature map tensors that are considered.
 One can notice that the *conservation rule* is observed when the considered operand is the addition, *i.e.* $\mathbf{L}^{(n)}(u,v) = u + v$ and then one has:
+
 $$
 \sum_j R_j^{u^{(n)}} + \sum_i R_k^{v^{(n)}} = \sum_i R_i^{(n-1)} 
 $$
@@ -80,11 +84,13 @@ But this rule is not observed in general when applying a matrix multiplication !
 This brings an instability issue, due to the matrix multiplication and the numerical issues of skip connections. To avoid the relevance scores of $u$ and $v$ exploding, the authors propose a normalization technique such that $\sum_i R_i^{(n)} = 1$ for each layer $n$. Moreover, their normalization techniques upholds the two following properties:
 
  1. The conservation rule
+
     $$
     \sum_j \bar{R}_j^{u^{(n)}} + \sum_k \bar{R}_k^{v^{(n)}} = \sum_i R_i^{(n-1)}
     $$
  
  2. It bounds the relevance sum of each tensor such that:
+
     $$
     0 \leq  \sum_j \bar{R}_j^{u^{(n)}},  \sum_k \bar{R}_k^{v^{(n)}}  \leq  \sum_i R_i^{(n-1)}
     $$
@@ -100,8 +106,9 @@ The model is then a Transformer model:
 	 - normalization layer (to prevent relevance exploding)
  - input: a sequence of $s$ tokens with a [CLS] token for classification
  - output: classification probability vector $y\in\mathbb{R}^C$
- - self-attention map for the block $b$ is $A^{(b)}=\mathrm{softmax}\left(\frac{\mathbf{Q}^{(b)}\cdot\mathbf{K}^{(b)^T}}{\sqrt{d_h}}\mathbb{R}ight)$, row-wise
+ - self-attention map for the block $b$ is $A^{(b)}=\mathrm{softmax}\left(\frac{\mathbf{Q}^{(b)}\cdot\mathbf{K}^{(b)^T}}{\sqrt{d_h}}\right)$, row-wise
  - The relevance of each attention map is computed for the layer where the *softmax* operation is applied (the layer $n_b$):
+
     $$
     \bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
     ~\\
