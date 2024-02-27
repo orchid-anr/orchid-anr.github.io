@@ -109,11 +109,11 @@ The model is then a Transformer model:
  - self-attention map for the block $b$ is $A^{(b)}=\mathrm{softmax}\left(\frac{\mathbf{Q}^{(b)}\cdot\mathbf{K}^{(b)^T}}{\sqrt{d_h}}\right)$, row-wise
  - The relevance of each attention map is computed for the layer where the *softmax* operation is applied (the layer $n_b$):
 
-    $$
-    \bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
-    ~\\
-    \mathbf{C} = \mathbf{\bar{A}}^{(1)}\cdot\ldots\cdot \mathbf{\bar{A}}^{(B)}
-    $$
+$$
+\bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
+~\\
+\mathbf{C} = \mathbf{\bar{A}}^{(1)}\cdot\ldots\cdot \mathbf{\bar{A}}^{(B)}
+$$
 
 Notice that this methods depends of the target class, which was not the case of the previous methods such as *rollout attention*.
 
