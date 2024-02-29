@@ -70,11 +70,11 @@ The idea is to recursively apply the Taylor theorem to the layers, starting from
 - $\tilde{a}_l$ be the root point chosen depending on the layers's input $a_l$ ($\tilde{a}_l(.)$ is a function) in the **linear region** of $a_l$. Therefore, according the the Taylor theorem, it follows that:
 
 
-$\begin{aligned}
+$$
 R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}_l)) + \left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
-\end{aligned}$
+$$
 
-
+We have to notice that:
 - ⚠️ Note that $\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l} \in \mathbb{R}^{d_{l}}$, it is the relevancy of $a_l$ computed for the $j$-th neuron in the $(l+1)$ layer. Then, the total relevance of the input $a_l$ to the layer $l$ is given by the sum over all $d_{l+1}$ hidden neurons.
 - At the base of the recursive application, the relevance of the network output is set to the value of the explained logit $a_{n+1_{[\xi]}}$. Then the relevance input computed with the **recursive Taylor method** is:
 
