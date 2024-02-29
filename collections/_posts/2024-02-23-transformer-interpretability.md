@@ -22,7 +22,7 @@ This paper is in review for ICLR 2021: [https://openreview.net/forum?id=YicbFdNT
 However, gray zones remain. Raw attention has proven to be sometimes irrelevant regarding predictions. The question is "how to rigorously analyse the links between input tokens, attention weights and prediction output?". Chefer et al. have come up with new leads on this subject, tackling the preexisting issues:
 
  - SOTA methods using raw attention or rollout attention happen to highlight irrelevant tokens
- - There are previous methods that propagate attention relevancy down to the attentions heads, to analyse attention heads relevancy separately, but none of thesde methods propagates the relevancy through all the layer (down to the inputs)
+ - There are previous methods that propagate attention relevancy down to the attentions heads, to analyse attention heads relevancy separately, but none of these methods propagates the relevancy through all the layer (down to the inputs)
  - Layer-wise relevancy propagation (LRP) is a commonly used method to recursively decompose the prediction of the network down to relevance scores for the single input dimensions. But, because of skip connection and attention operators, handling complex activation maps lead to numerical instability, and some amount of the relevancy is lost. 
 
 Therefore, the purpose is to get relevant score to be highlighted. The relevancy is assigned to patches and is propagated through all layers of the network, such that: 
