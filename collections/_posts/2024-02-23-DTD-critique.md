@@ -62,7 +62,7 @@ $$
 f = f_n\circ f_{n-1}\circ \ldots \circ f_1
 $$
 
-where $f_l :  \R^{d_l} \to \R^{d_{l+1}}_{\geq 0}$ has the form $f_l(a_l) = [W_l a_l]^+$
+where $f_l :  \mathbb{R}^{d_l} \to \mathbb{R}^{d_{l+1}}_{\geq 0}$ has the form $f_l(a_l) = [W_l a_l]^+$
 
 The idea is to recursively apply the Taylor theorem to the layers, starting from the output layer to the input. 
 
@@ -82,7 +82,7 @@ $$
 
 ## Concrete example 
 
-For instance, we can start from a point $x$ that sets the relevance of the $j$-th neuron to $0$, i.e. $w_j^\top x + b_j=0$ because the idea is to compute the output with the first-order derivate of the Taylor formula, which is possible in that case. To remain in the **linear region** of $x$, we can chose a direction $v_j$ such that for any $t\in \R$:
+For instance, we can start from a point $x$ that sets the relevance of the $j$-th neuron to $0$, i.e. $w_j^\top x + b_j=0$ because the idea is to compute the output with the first-order derivate of the Taylor formula, which is possible in that case. To remain in the **linear region** of $x$, we can chose a direction $v_j$ such that for any $t\in \mathbb{R}$:
 
  - $\tilde{x}_j$ is in the intersection of the line $x + t v_j$
  - and of the hyperplan defined by $w_j^\top x + b_j = 0$, because the advantage of $f(\tilde{x}) = 0$ is that the output is absorbed to the first-order term of the Taylor's formula.
