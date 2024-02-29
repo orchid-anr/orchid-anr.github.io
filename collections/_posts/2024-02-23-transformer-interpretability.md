@@ -110,9 +110,11 @@ The model is then a Transformer model:
  - The relevance of each attention map is computed for the layer where the *softmax* operation is applied (the layer $n_b$):
 
 $$
-\bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
-~\\
-\mathbf{C} = \mathbf{\bar{A}}^{(1)}\cdot\ldots\cdot \mathbf{\bar{A}}^{(B)}
+\begin{aligned}
+&\bar{A}^{(b)} = I + \mathbb{E}_h[\nabla \mathbf{A}^{(b)}\odot R^{(n_b)}]^+ \\
+&~\\
+&\mathbf{C} = \mathbf{\bar{A}}^{(1)}\cdot\ldots\cdot \mathbf{\bar{A}}^{(B)}
+\end{aligned}
 $$
 
 Notice that this methods depends of the target class, which was not the case of the previous methods such as *rollout attention*.
