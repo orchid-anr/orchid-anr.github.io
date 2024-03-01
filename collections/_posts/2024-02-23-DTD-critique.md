@@ -73,6 +73,10 @@ $$
 R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}_l)) + \left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
 $$
 
+$$
+R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}_l)) + \left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
+$$
+
 - ⚠️ Note that $\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l} \in \mathbb{R}^{d_{l}}$, it is the relevancy of $a_l$ computed for the $j$-th neuron in the $(l+1)$ layer. Then, the total relevance of the input $a_l$ to the layer $l$ is given by the sum over all $d_{l+1}$ hidden neurons.
 - At the base of the recursive application, the relevance of the network output is set to the value of the explained logit $a_{n+1_{[\xi]}}$. Then the relevance input computed with the **recursive Taylor method** is:
 
@@ -110,7 +114,7 @@ This formula hardly generalizes to deep network with several layers, it need str
 
 ## Analysis and Critique of the Recursive Application of the Taylor Theorem
 
-- The valid region for root points of the relevancy score is restricted by the network $f$, then the size of admissible regions for the root points cannot be increased. Let's denote $\mathcal{N}_f(x)$ the set of all points $x \in \mathcal{X}$ that have the same gradient as the input $x$ and for which all points in the line between $x$ and $x'$ have the same gradient as well. Then the previous proposition implies that $\mathcal{N}_{R^l}(a_l) \subseteq \mathcal{N}_{f_{n_\xi}\circ\ldots\circ f_l}(a_l)$.
+- The valid region for root points of the relevancy score is restricted by the network $f$, then the size of admissible regions for the root points cannot be increased. Let's denote $\mathcal{N}_f(x)$ the set of all points $x' \in \mathcal{X}$ that have the same gradient as the input $x$ and for which all points in the line between $x$ and $x'$ have the same gradient as well. Then the previous proposition implies that $\mathcal{N}_{R^l}(a_l) \subseteq \mathcal{N}_{f_{n_\xi}\circ\ldots\circ f_l}(a_l)$.
 - Locally constant roots imply equivalence of recursive Taylor method and the Gradient x Input method, meaning that: $R(x) = R(\tilde{x}) + \nabla f_{[\xi]}(x) \odot (x-\tilde{x})$, which implies the equivalence when $\tilde{x}=0$.
 - The choice of the root point is not very well restricted. It must be from the linear region $\mathcal{N}_{R_{[k]}^l}(a_l)$, but the relevancy $R^{(l-1)}(a_{(l-1)})$ depends upon the Jacobian $\partial \tilde{a}_l^{(j)}/\partial a_l$, and thus, it depends of the choice of the root point. This can lead to several arbitrary explanation results
 - The problem with choosing another activation function (like Softplus for instance) is that the Taylor's formula includes a lot more non-zero high-order terms: for a $n$-layered network, we would get $n$-ordered derivatives. The problem is that it is unclear how these chains of high-order derivatives behave
