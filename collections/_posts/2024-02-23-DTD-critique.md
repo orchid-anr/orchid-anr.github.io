@@ -79,7 +79,7 @@ $$
 - At the base of the recursive application, the relevance of the network output is set to the value of the explained logit $a_{n+1_{[\xi]}}$. Then the relevance input computed with the **recursive Taylor method** is:
 
 $$
-R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}_{l})) + \left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
+R^l(a_{l}) = \sum_{j=1}^{d_{l+1}} \left(\left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l^{(j)}(a_l)}\odot \left(a_l-\tilde{a}^{(j)}(a_l)\right)\right)
 $$
 
 ## Concrete example 
