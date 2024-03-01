@@ -71,7 +71,7 @@ The idea is to recursively apply the Taylor theorem to the layers, starting from
 
 $$
 \begin{equation*}
-R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}_l))+\left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
+R_{[j]}^{l+1}(a_{l+1}) = R_{[j]}^{l+1}(f_l(\tilde{a}))+\left.\frac{\partial R_{[j]}^{l+1}(f_l(a_l))}{\partial a_l}\right|_{a_l=\tilde{a}_l(a_l)} \cdot (a_l - \tilde{a}_l(a_l))
 \end{equation*}
 $$
 
