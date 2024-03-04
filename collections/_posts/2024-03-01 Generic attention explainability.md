@@ -68,8 +68,8 @@ where $\mathbf{\bar{R}}^{ss}$ is the row-normalized of $\mathbf{\hat{R}}^{ss}=\m
 
 $$
 \begin{aligned}
-\mathbf{\hat{S}}\_{m,n}^{xx} = \sum_{k=1}^{|x|} \mathbf{\hat{R}}^{xx}\_{m,k} \\
-\mathbf{\bar{R}}^{xx} = \mathbf{\hat{R}}^{xx}/\;\mathbf{\hat{S}}\_{m,n}^{xx} + \mathbf{I}^{x\times x}
+\mathbf{\hat{S}}\_{m,n}^{xx} & = \sum_{k=1}^{|x|} \mathbf{\hat{R}}^{xx}\_{m,k} \\
+\mathbf{\bar{R}}^{xx} & = \mathbf{\hat{R}}^{xx}/\;\mathbf{\hat{S}}\_{m,n}^{xx} + \mathbf{I}^{x\times x}
 \end{aligned}
 $$
 
