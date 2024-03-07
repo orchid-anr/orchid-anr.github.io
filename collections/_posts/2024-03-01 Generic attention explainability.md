@@ -48,6 +48,15 @@ $$
 where $\nabla \mathbf{A}:= \frac{\partial y_t}{\partial \mathbf{A}}$ and where $y_t$ is the targeted class. 
 
 - $\mathbf{A}^{tt}$ and $\mathbf{A}^{ii}$ represent the self-attention interactions for the text and image tokens respectively ;  $\mathbf{A}^{ti}$ and $\mathbf{A}^{it}$ represent the influence of the image tokens on each text token, and the influence of the text tokens on each image token, respectively 
+- Relevancy are initialized as follows:
+
+$$
+\begin{aligned}
+R^{ii} = R^{tt} & = \mathbf{I} \\
+R^{ti} = R^{it} & = \mathbf{0}
+\end{aligned}
+$$
+
 - For the **self-attention layers**, with one single modality, $s=q$ (where $s$ and $q$ indicate the domains and the number of tokens in each domain, can be $s$ query tokens and $q$ key tokens). The relevancy updating follows the following rule for self-attention layers that satisfy $\mathbf{\bar{A}} \in \mathbb{R}^{s \times s}$:
 
 $$
