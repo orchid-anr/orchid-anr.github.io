@@ -51,8 +51,10 @@ where $\nabla \mathbf{A}:= \frac{\partial y_t}{\partial \mathbf{A}}$ and where $
 - For the **self-attention layers**, with one single modality, $s=q$ (where $s$ and $q$ indicate the domains and the number of tokens in each domain, can be $s$ query tokens and $q$ key tokens). The relevancy updating follows the following rule for self-attention layers that satisfy $\mathbf{\bar{A}} \in \mathbb{R}^{s \times s}$:
 
 $$
-\mathbf{R}^{ss} = \mathbf{R}^{ss} + \mathbf{\bar{A}} \cdot \mathbf{R}^{ss} \\
-\mathbf{R}^{sq} = \mathbf{R}^{sq} + \mathbf{\bar{A}} \cdot \mathbf{R}^{sq}
+\begin{aligned}
+\mathbf{R}^{ss} & = \mathbf{R}^{ss} + \mathbf{\bar{A}} \cdot \mathbf{R}^{ss} \\
+\mathbf{R}^{sq} & = \mathbf{R}^{sq} + \mathbf{\bar{A}} \cdot \mathbf{R}^{sq}
+\end{aligned}
 $$
 
 the second line is only applied when there is also co-attention modules in the network (in that case $q\neq s$)
