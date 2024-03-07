@@ -62,8 +62,10 @@ the second line is only applied when there is also co-attention modules in the n
 - For the **bi-modal layers**, $\mathbf{\bar{A}} \in \mathbb{R}^{s \times q}$ and the update rule is:
 
 $$
-\mathbf{R}^{sq} = \mathbf{R}^{sq} + (\mathbf{\bar{R}}^{ss})^\top \cdot \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qq} \\
-\mathbf{R}^{ss} = \mathbf{R}^{ss} + \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qs} 
+\begin{aligned}
+\mathbf{R}^{sq} & = \mathbf{R}^{sq} + (\mathbf{\bar{R}}^{ss})^\top \cdot \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qq} \\
+\mathbf{R}^{ss} & = \mathbf{R}^{ss} + \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qs} 
+\end{aligned}
 $$
 
 where $\mathbf{\bar{R}}^{ss}$ is the row-normalized of $\mathbf{\hat{R}}^{ss}=\mathbf{R}^{ss} - \mathbf{I}^{s \times s}$, the whole added to $\mathbf{I}^{s \times s}$ (the purpose is to separate the influence of each token on the other $i$-th token, and the identity matrix setting that value for each token w.r.t to itself to $1$).
