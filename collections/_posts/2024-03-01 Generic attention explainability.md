@@ -73,7 +73,7 @@ the second line is only applied when there is also co-attention modules in the n
 $$
 \begin{aligned}
 \mathbf{R}^{sq} & = \mathbf{R}^{sq} + (\mathbf{\bar{R}}^{ss})^\top \cdot \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qq} \\
-\mathbf{R}^{ss} & = \mathbf{R}^{ss} + \mathbf{\bar{A}}  \cdot \mathbf{\bar{R}}^{qs} 
+\mathbf{R}^{ss} & = \mathbf{R}^{ss} + \mathbf{\bar{A}}  \cdot \mathbf{R}^{qs} 
 \end{aligned}
 $$
 
@@ -87,7 +87,7 @@ $$
 $$
 
 - Note that the second equation in each update rule accounts for the interaction between two modalities (*e.g.* when the previous bi-model attention layer inserts context from $q$ into $s$, the self-attention matrix $\mathbf{\bar{A}} \in \mathbb{R}^{s \times s}$ mixes the context $q$ in each token from $s$ as well)
-- Finally, note that to retrieve per-token relevancies for classification task, one can consider the row corresponding to the [CLS] token in the corresponding relevancy map. If there are two modalities, we consider $\mathbf{R}^{ss}$ and $\mathbf{R}^{sq}$, where the [CLS] token was added to the "$s$" modality. 
+- Finally, note that to retrieve per-token relevancies for classification task, one can consider the row corresponding to the [CLS] token in the corresponding relevancy map. If there are two modalities, we consider $\mathbf{R}^{ss}$ and $\mathbf{R}^{sq}$, where the [CLS] token was added to the $s$ modality. 
 
 ## Experiments and results
 The baselines used for comparison purposes are:
