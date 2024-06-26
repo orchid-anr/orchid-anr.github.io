@@ -1,4 +1,4 @@
-journal_list_title: Journal papers (since 2020)
+journal_list_title: Journal papers
 journal:
                                                                         
   - authors: 'H.J. Ling, S. Bru, J. Puig, F. Vixège, S. Mendez, F. Nicoud, P.Y. Courand, O. Bernard and D. Garcia'
@@ -9,8 +9,8 @@ journal:
     doi: https://arxiv.org/abs/2403.13040
 
 
-journal_list_title: Conference proceedings
-journal:
+conference_list_title: Conference proceedings
+conference:
 
   - authors: 'A. Judge, T. Judge, N. Duchateau, R.A. Sandler, J.Z. Sokol, O. Bernard and P.M. Jodoin'
     year: 2024
