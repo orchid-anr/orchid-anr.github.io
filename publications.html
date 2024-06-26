@@ -31,7 +31,7 @@ permalink: /publications/
        <li>
          {{item.authors}} ({{item.year}}) 
          <strong>{{item.title}}</strong>, 
-         In proceedings of {{item.conference}}
+         In proceedings of {{item.conference}} {%if item.doi %} <a href="{{item.doi}}">{{item.doi}}</a> {% endif %}
        </li><br>
        {% endfor %}
   </ul>
