@@ -1,5 +1,24 @@
+journal_list_title: Journal papers (since 2020)
+journal:
+                                                                        
+  - authors: 'H.J. Ling, S. Bru, J. Puig, F. Vixège, S. Mendez, F. Nicoud, P.Y. Courand, O. Bernard and D. Garcia'
+    year: 2024
+    title: 'Physics-Guided Neural Networks for Intraventricular Vector Flow Mapping'
+    journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
+    pages : early access
+    doi: https://arxiv.org/abs/2403.13040
+
+
 journal_list_title: Conference proceedings
 journal:
+
+  - authors: 'A. Judge, T. Judge, N. Duchateau, R.A. Sandler, J.Z. Sokol, O. Bernard and P.M. Jodoin'
+    year: 2024
+    title: 'Domain Adaptation of Echocardiography Segmentation Via Reinforcement Learning'
+    journal: in the 27th international conference on Medical Image Computing and Computer Assisted Intervention (MICCAI'24)
+    pages: 1-11
+    doi: coming soon                                                                       
+
 
   - authors: 'H.J. Ling, N. Painchaud, P.Y. Courand, P.M. Jodoin, D. Garcia and O. Bernard'
     year: 2023
