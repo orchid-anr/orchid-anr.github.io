@@ -16,7 +16,7 @@ conference:
     year: 2024
     title: 'Domain Adaptation of Echocardiography Segmentation Via Reinforcement Learning'
     conference: in the 27th international conference on Medical Image Computing and Computer Assisted Intervention (MICCAI'24)
-    doi: coming soon                                                                       
+    doi: https://arxiv.org/pdf/2406.17902                                                                     
 
 
   - authors: 'H.J. Ling, N. Painchaud, P.Y. Courand, P.M. Jodoin, D. Garcia and O. Bernard'
