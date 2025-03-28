@@ -5,12 +5,18 @@ journal:
     year: 2024
     title: 'Physics-Guided Neural Networks for Intraventricular Vector Flow Mapping'
     journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
-    pages : early access
+    pages : 71(11):1377-1388
     doi: https://arxiv.org/abs/2403.13040
 
 
 conference_list_title: Conference proceedings
 conference:
+
+  - authors: 'J. Stym-Popper, N. Painchaud, P.Y Courand, C. Rambour, N. Thome and O. Bernard'
+    year: 2025
+    title: 'DAFTED: Decoupled Asymmetric Fusion of Tabular and Echocardiographic Data for Cardiac Hypertension Diagnosis'
+    conference: in Medical Imaging with Deep Learning (MIDL'25)
+    doi: https://openreview.net/pdf?id=ghhGImwv07 
 
   - authors: 'A. Judge, T. Judge, N. Duchateau, R.A. Sandler, J.Z. Sokol, O. Bernard and P.M. Jodoin'
     year: 2024
