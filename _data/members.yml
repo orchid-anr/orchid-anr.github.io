@@ -88,6 +88,16 @@ medical_doctors:
     
 phd:
 
+  - firstname: 'Jeremie'
+    lastname: 'Stym-Popper'
+    institution: 'Sorbonne Université - Laboratoire ISIR'
+    picture: 'icon_phd.jpg'
+    speciality: "Machine learning, deep learning, multi-modal analysis"
         
 postdoc:
 
+  - firstname: 'Khuram'
+    lastname: 'Faraz'
+    institution: 'CREATIS'
+    picture: 'icon_phd.jpg'
+    speciality: "Ultrasound imaging, simulation"
