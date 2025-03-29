@@ -18,7 +18,7 @@ professors:
     university: 'INSA, University of Lyon'
     picture: 'oBernard.jpg'
     interests: "Cardiac imaging, deep learning, image simulation"
-    url: "https://www.creatis.insa-lyon.fr/~bernard/"
+    url: "https://olivier-bernard-creatis.github.io/"
     
   - firstname: 'Nicolas'
     lastname: 'Thome'
@@ -92,7 +92,7 @@ phd:
     lastname: 'Stym-Popper'
     institution: 'Sorbonne Université - Laboratoire ISIR'
     picture: 'icon_phd.jpg'
-    speciality: "Machine learning, deep learning, multi-modal analysis"
+    interests: "Machine learning, deep learning, multi-modal analysis"
         
 postdoc:
 
@@ -100,4 +100,4 @@ postdoc:
     lastname: 'Faraz'
     institution: 'CREATIS'
     picture: 'icon_phd.jpg'
-    speciality: "Ultrasound imaging, simulation"
+    interests: "Ultrasound imaging, simulation"
