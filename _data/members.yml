@@ -91,6 +91,7 @@ phd:
   - firstname: 'Jeremie'
     lastname: 'Stym-Popper'
     institution: 'Sorbonne Université - Laboratoire ISIR'
+    supervisors: 'N. Thome, O. Bernard and C. Rambour'
     picture: 'icon_phd.jpg'
     interests: "Machine learning, deep learning, multi-modal analysis"
         
@@ -99,5 +100,6 @@ postdoc:
   - firstname: 'Khuram'
     lastname: 'Faraz'
     institution: 'CREATIS'
+    supervisors: 'O. Bernard and D. Garcia'    
     picture: 'icon_phd.jpg'
     interests: "Ultrasound imaging, simulation"

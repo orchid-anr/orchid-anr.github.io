@@ -173,9 +173,12 @@ permalink: /members/
          <tr>
              <th>
                  <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
-                 {%if item.university %}
-                  Institution: {{ item.university }}
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
                  {% endif %} </br>   
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                    
                    <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
                     {%if item.interests %}
                         Interests: {{ item.interests }}
