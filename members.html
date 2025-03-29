@@ -31,8 +31,8 @@ permalink: /members/
                   Institution: {{ item.university }}
                  {% endif %} </br>   
                    <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
-                    {%if item.interests %}
-                        Interests: {{ item.interests }}
+                    {%if item.expertise %}
+                        Expertise: {{ item.expertise }}
                     {% endif %} </br>
                  {%if item.url %}
                   <a href="{{item.url}}" target="_blank">Web site</a>
@@ -60,8 +60,8 @@ permalink: /members/
                   Institution: {{ item.institution }}
                  {% endif %} </br>   
                    <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
-                 {%if item.interests %}
-                  Interests: {{ item.interests }}
+                 {%if item.expertise %}
+                  Expertise: {{ item.expertise }}
                  {% endif %} </br>
                  {%if item.url %}
                   <a href="{{item.url}}" target="_blank">Web site</a>
@@ -89,10 +89,10 @@ permalink: /members/
                   Institution: {{ item.university }}
                  {% endif %} </br>
                    <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
-                    {%if item.interests %}
-                        Interests: {{ item.interests }}
+                    {%if item.expertise %}
+                        Expertise: {{ item.expertise }}
                     {% endif %} </br>
-		 {%if item.url %}
+		             {%if item.url %}
                   <a href="{{item.url}}" target="_blank">Web site</a>
                  {% endif %}
              </th>
@@ -118,8 +118,8 @@ permalink: /members/
                   Institution: {{ item.institution }}
                  {% endif %} </br>   
                    <!--<a href="https://creatis-myriad.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
-                 {%if item.interests %}
-                  Interests: {{ item.interests }}
+                 {%if item.expertise %}
+                  Expertise: {{ item.expertise }}
                  {% endif %} </br>
                  {%if item.url %}
                   <a href="{{item.url}}" target="_blank">Web site</a>
@@ -177,14 +177,10 @@ permalink: /members/
                  {% endif %} </br>
                  {%if item.supervisors %}
                   Supervisor(s): {{ item.supervisors }}
-                 {% endif %} </br>                 
-		 {%if item.subject %}
-                 {%if item.interests %}
-                  Interests: {{ item.interests }}
+                 {% endif %} </br>
+                 {%if item.expertise %}
+                  Expertise: {{ item.expertise }}
                  {% endif %}
-                 </br></br>                 
-		  Subject: <em>{{ item.subject }}</em>
-		 {% endif %}
              </th>
               <th>
                   {%if item.picture %}
@@ -208,14 +204,10 @@ permalink: /members/
                  {% endif %} </br>
                  {%if item.supervisors %}
                   Supervisor(s): {{ item.supervisors }}
-                 {% endif %} </br>                 
-		 {%if item.subject %}
-                 {%if item.interests %}
-                  Interests: {{ item.interests }}
+                 {% endif %} </br>
+                 {%if item.expertise %}
+                  Expertise: {{ item.expertise }}
                  {% endif %}
-                 </br></br>                 
-		  Subject: <em>{{ item.subject }}</em>
-		 {% endif %}                 
              </th>
               <th>
                   {%if item.picture %}
