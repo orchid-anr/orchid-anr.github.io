@@ -1,5 +1,13 @@
 journal_list_title: Journal papers
 journal:
+
+  - authors: 'N. Painchaud, J. Stym-Popper, P.Y. Courand, N. Thome, P.M. Jodoin, N. Duchateau and Olivier Bernard'
+    year: 2025
+    title: 'Fusing Echocardiography Images and Medical Records for Continuous Patient Stratification'
+    journal: IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control
+    pages : In press
+    doi: https://arxiv.org/abs/2401.07796
+
                                                                         
   - authors: 'H.J. Ling, S. Bru, J. Puig, F. Vixège, S. Mendez, F. Nicoud, P.Y. Courand, O. Bernard and D. Garcia'
     year: 2024
