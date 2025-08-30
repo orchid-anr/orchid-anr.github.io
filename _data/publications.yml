@@ -20,6 +20,12 @@ journal:
 conference_list_title: Conference proceedings
 conference:
 
+  - authors: 'T. Judge, N. Duchateau, K. Faraz, P.M. Jodoin and O. Bernard'
+    year: 2025
+    title: 'Generation of realistic cardiac ultrasound sequences with ground truth motion and speckle decorrelation'
+    conference: in international ultrasonics symposium (IEEE IUS'25)
+    doi: https://hal.science/CREATIS/hal-05226018v1     
+
   - authors: 'J. Stym-Popper, N. Painchaud, P.Y Courand, C. Rambour, N. Thome and O. Bernard'
     year: 2025
     title: 'DAFTED: Decoupled Asymmetric Fusion of Tabular and Echocardiographic Data for Cardiac Hypertension Diagnosis'
