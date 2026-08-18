@@ -5,7 +5,7 @@ journal:
     year: 2026
     title: 'Reinforcement Learning for Unsupervised Domain Adaptation in Spatio-Temporal Echocardiography Segmentation'
     journal: IEEE Transactions on Medical Imaging
-    pages : In press
+    pages : 45(7):4161-4173
     doi: https://arxiv.org/abs/2510.14244
 
   - authors: 'A. Austlid Taskén, T. Judge, E.A. Rye Berg, J. Yu, B. Grenne, F. Lindseth, S. Aakhus, P.M. Jodoin, N. Duchateau, O. Bernard and G. Kiss'
