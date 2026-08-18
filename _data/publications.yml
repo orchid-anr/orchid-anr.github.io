@@ -33,6 +33,18 @@ journal:
 conference_list_title: Conference proceedings
 conference:
 
+  - authors: 'J. Stym-Popper, C. Rambour, F. Granese, N. Thome and O. Bernard'
+    year: 2026
+    title: 'TSPFN: A Temporal Tabular Foundation Model for Physiological Time Series Classification'
+    conference: in Statistical Atlases and Computational Modeling of the Heart (STACOM'26), workshop at MICCAI
+    doi: 
+
+  - authors: 'T. Judge, N. Duchateau, A. Ostvik, H. Dalen, B. Grenne, P.Y. Courand, L. Lovestakken, P.M. Jodoin and O. Bernard'
+    year: 2026
+    title: 'Myocardial Strain Drift Correction in Deep Learning Based Ultrasound Tracking'
+    conference: in Statistical Atlases and Computational Modeling of the Heart (STACOM'26), workshop at MICCAI
+    doi: 
+
   - authors: 'T. Judge, N. Duchateau, K. Faraz, P.M. Jodoin and O. Bernard'
     year: 2025
     title: 'Generation of realistic cardiac ultrasound sequences with ground truth motion and speckle decorrelation'
